@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python:*)",
+      "Bash(dir:*)",
+      "Bash(nvidia-smi:*)",
+      "Bash(tasklist /FI \"IMAGENAME eq python.exe\" /FO TABLE)",
+      "Bash(for:*)",
+      "Bash(do nvidia-smi --query-gpu=utilization.gpu,power.draw --format=csv,noheader,nounits)",
+      "Bash(timeout /t 2)",
+      "Bash(nul)",
+      "Bash(done)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
