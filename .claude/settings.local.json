@@ -9,7 +9,10 @@
       "Bash(do nvidia-smi --query-gpu=utilization.gpu,power.draw --format=csv,noheader,nounits)",
       "Bash(timeout /t 2)",
       "Bash(nul)",
-      "Bash(done)"
+      "Bash(done)",
+      "Bash(git remote set-url:*)",
+      "Bash(powershell -Command \"Get-Content ''c:\\\\Users\\\\Will\\\\Deep-Learning-Coursework\\\\submission.csv'' | Select-Object -First 10\")",
+      "Bash(powershell -Command \"Get-ChildItem ''c:\\\\Users\\\\Will\\\\Deep-Learning-Coursework\\\\data\\\\train'' -Directory | Select-Object Name\")"
     ],
     "deny": [],
     "ask": []
